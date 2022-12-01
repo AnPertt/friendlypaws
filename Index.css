@@ -1,0 +1,102 @@
+/*BOX*/
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+header {
+  background-color: #698;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/*MOTTO*/
+p {
+  margin-top:-40px;
+  font-size: 20px;
+  color: #404;
+  margin-bottom: 70px;
+}
+
+/*NAVIGATION BAR*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #002;
+  
+}
+
+li {
+  float: left;
+}
+
+
+li a {
+  display: block;
+  color: #696;
+  text-align: center;
+  padding: 5px 60px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+li a:hover {
+  background-color: #005;
+}
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #696;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #486;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  
+}
+
+/* Responsive layout - */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
